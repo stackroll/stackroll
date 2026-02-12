@@ -3,6 +3,8 @@
     src: url("https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700;900&display=swap");
 }
 
+
+
 :root {
     --bg: #050506;
     --surface: #0a0a0c;
@@ -70,4 +72,8 @@ nav {
     transition: all 0.4s ease;
 }
 
-
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
