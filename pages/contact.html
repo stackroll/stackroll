@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — StackRoll</title>
+<meta name="description" content="Get in touch with StackRoll. Tell us about your project and get a free consultation.">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+<div class="loader">
+  <div class="loader-logo">Stack<span>Roll</span></div>
+  <div class="loader-bar-track"><div class="loader-bar"></div></div>
+  <div class="loader-text">Loading experience</div>
+</div>
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+<div class="page-transition"></div>
+
+<div class="cmd-overlay">
+  <div class="cmd-palette">
+    <div class="cmd-input-wrap">
+      <span class="cmd-icon">⌘</span>
+      <input class="cmd-input" placeholder="Type a command or search..." autocomplete="off" spellcheck="false">
+      <span class="cmd-esc">ESC</span>
+    </div>
+    <div class="cmd-results"></div>
+    <div class="cmd-footer"><span>↑↓ Navigate</span><span>↵ Select</span><span>ESC Close</span></div>
+  </div>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">Stack<span>Roll</span></a>
+  <div class="nav-links">
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <button class="nav-shortcut"><kbd>⌘</kbd><kbd>K</kbd></button>
+    <a href="contact.html" class="nav-cta-btn">Get a Quote</a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Work</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<section class="page-hero">
+  <div class="page-hero-number sr">C.</div>
+  <div class="tag sr">Contact</div>
+  <h1 class="heading-xl sr sr-d1">Let's<br>talk.</h1>
+  <p class="text-body sr sr-d2" style="max-width: 520px;">Tell us about your project. We respond within 24 hours — usually much faster.</p>
+</section>
+
+<div class="divider"></div>
+
+
+<section class="contact-section" style="padding-top: 80px;">
+
+  
+  <div class="contact-info sr">
+    <div class="contact-block">
+      <div class="contact-label">Email</div>
+      <div class="contact-value"><a href="mailto:hello@stackroll.dev">hello@stackroll.dev</a></div>
+    </div>
+    <div class="contact-block">
+      <div class="contact-label">Location</div>
+      <div class="contact-value">Bolzano, Italy</div>
+    </div>
+    <div class="contact-block">
+      <div class="contact-label">Availability</div>
+      <div class="contact-value" style="display: flex; align-items: center; gap: 10px;">
+        <span style="width:8px; height:8px; border-radius:50%; background:#22c55e; display:inline-block;"></span>
+        Open for projects
+      </div>
+    </div>
+
+    <div class="contact-benefits">
+      <div class="benefit-item">
+        <span class="benefit-check">✓</span>
+        <div class="benefit-text">
+          <strong>Free consultation</strong>
+          We'll scope your project and give you an honest assessment — no strings attached.
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span class="benefit-check">✓</span>
+        <div class="benefit-text">
+          <strong>Transparent pricing</strong>
+          Fixed quotes. No hidden fees. No surprise invoices at the end.
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span class="benefit-check">✓</span>
+        <div class="benefit-text">
+          <strong>Full source code ownership</strong>
+          Everything we build belongs to you. No lock-in, no licensing games.
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span class="benefit-check">✓</span>
+        <div class="benefit-text">
+          <strong>Post-launch support</strong>
+          We don't disappear after deployment. Bugs, updates, questions — we're here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="contact-form-wrap sr sr-d2">
+    <div class="form-title">Request a Quote</div>
+    <div class="form-subtitle">Fill this out and we'll get back to you with a game plan.</div>
+    <form id="quoteForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input class="form-input" type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" placeholder="you@company.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Company / Organization</label>
+        <input class="form-input" type="text" placeholder="Optional">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Project Type</label>
+          <select class="form-select" required>
+            <option value="" disabled selected>Select...</option>
+            <option>Website or Web App</option>
+            <option>Backend / API System</option>
+            <option>Full-Stack Application</option>
+            <option>Technical Problem Solving</option>
+            <option>Something Else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Budget Range</label>
+          <select class="form-select">
+            <option value="" disabled selected>Select...</option>
+            <option>Under €1,000</option>
+            <option>€1,000 — €5,000</option>
+            <option>€5,000 — €15,000</option>
+            <option>€15,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Project Details</label>
+        <textarea class="form-textarea" placeholder="Tell us about your project — what problem are you solving? Any timeline or technical requirements?"></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="submitBtn">Send Request →</button>
+      <p class="form-note">We'll respond within 24 hours. Usually faster.</p>
+    </form>
+  </div>
+
+</section>
+
+
+<div class="divider"></div>
+<section class="faq-section">
+  <div class="faq-header">
+    <div class="tag sr">FAQ</div>
+    <h2 class="heading-lg sr sr-d1">Common<br>questions.</h2>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item sr">
+      <h4>How much does a project cost?</h4>
+      <p>Depends on scope. A marketing website starts around €1,000. Complex web apps with backends can range from €5,000–€15,000+. We always give a fixed quote upfront.</p>
+    </div>
+    <div class="faq-item sr sr-d1">
+      <h4>How long does a project take?</h4>
+      <p>Simple websites: 2–4 weeks. Full-stack applications: 1–3 months. We'll give you a realistic timeline before starting.</p>
+    </div>
+    <div class="faq-item sr sr-d2">
+      <h4>What technologies do you use?</h4>
+      <p>We pick the best tool for the job. Our core stack includes C++, Java, Python, Go, JavaScript/TypeScript, Spring Boot, React, and Docker.</p>
+    </div>
+    <div class="faq-item sr sr-d3">
+      <h4>Do I own the code?</h4>
+      <p>Yes. 100%. Everything we write belongs to you. Full source code, no licensing restrictions, no lock-in.</p>
+    </div>
+    <div class="faq-item sr sr-d4">
+      <h4>Can you work with my existing system?</h4>
+      <p>Absolutely. We can integrate with existing backends, APIs, databases, or extend what you already have.</p>
+    </div>
+    <div class="faq-item sr sr-d5">
+      <h4>What happens after launch?</h4>
+      <p>We include post-launch support. Bugs, tweaks, questions — we don't disappear. Ongoing maintenance plans are available too.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Stack<span>Roll</span></div>
+      <p class="footer-desc">A dev studio that builds digital products from the ground up. Based in Italy.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Pages</div>
+      <a href="/index.html">Home</a>
+      <a href="/pages/services.html">Services</a>
+      <a href="/pages/work.html">Work</a>
+      <a href="/pages/contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <a href="/pages/services.html">Web Apps</a>
+      <a href="/pages/services.html">Backend & APIs</a>
+      <a href="/pages/services.html">Problem Solving</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Connect</div>
+      <a href="mailto:stackroll26@gmail.com">stackroll26@gmail.com</a>
+      <a href="https://github.com/stackroll" target="_blank" rel="noopener">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 StackRoll. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://github.com/stackroll" target="_blank" rel="noopener">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  document.getElementById('quoteForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Sent! We\'ll be in touch ✓';
+    btn.classList.add('sent');
+    setTimeout(() => {
+      btn.textContent = 'Send Request →';
+      btn.classList.remove('sent');
+      e.target.reset();
+    }, 3500);
+  });
+</script>
+</body>
+</html>
