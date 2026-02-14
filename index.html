@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StackRoll — Dev Studio</title>
 <meta name="description" content="StackRoll is a dev studio that designs, builds, and ships digital products. Websites, backends, APIs, and custom solutions.">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+    updateLogo(isDark);
+  })();
+</script>
+
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/index.css">
 </head>
@@ -14,6 +25,7 @@
   <div class="loader-logo">Stack<span>Roll</span></div>
   <div class="loader-bar-track"><div class="loader-bar"></div></div>
   <div class="loader-text">Loading experience</div>
+  
 </div>
 
 <div class="cursor"></div>
@@ -37,8 +49,12 @@
   </div>
 </div>
 
+
 <nav class="nav">
-  <a href="/index.html" class="nav-logo">Stack<span>Roll</span></a>
+  <a href="/index.html" class="nav-logo">
+      <img src="/Images/sticon.png" data-light="/images/sticon.png" data-dark="/Images/sticonw.png" alt="Logo" class="nav-logo-icon">
+      <span class="nav-logo-text">Stack<span>Roll</span></span>
+  </a>
   <div class="nav-links">
     <a href="/pages/services.html" class="nav-link">Services</a>
     <a href="/pages/work.html" class="nav-link">Work</a>

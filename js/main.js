@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  const savedTheme = localStorage.getItem('theme');
+  const isDark = savedTheme === 'dark';
+  updateLogo(isDark);
+
   // for loading
   const loader = document.querySelector('.loader');
   if (loader) {
@@ -108,12 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const cmdResults = document.querySelector('.cmd-results');
 
   const commands = [
-    { icon: '', title: 'Home', sub: 'Go to homepage', url: '/index.html', keys: ['home'] },
-    { icon: '', title: 'Services', sub: 'What we do', url: '/pages/services.html', keys: ['services', 'what'] },
-    { icon: '', title: 'Work', sub: 'Our projects', url: '/pages/work.html', keys: ['work', 'projects', 'portfolio'] },
-    { icon: '', title: 'Contact', sub: 'Get a quote', url: '/pages/contact.html', keys: ['contact', 'quote', 'email', 'hire'] },
-    { icon: '', title: 'Toggle Dark Mode', sub: 'Switch theme', action: 'darkmode', keys: ['dark', 'theme', 'mode'] },
-    { icon: '', title: 'Back to Top', sub: 'Scroll to top', action: 'scrolltop', keys: ['top', 'scroll'] },
+    { icon: '<img src="/Images/house.png" class="icon-img">', title: 'Home', sub: 'Go to homepage', url: '/index.html', keys: ['home'] },
+    { icon: '<img src="/Images/customer-service.png" class="icon-img">', title: 'Services', sub: 'What we do', url: '/pages/services.html', keys: ['services', 'what'] },
+    { icon: '<img src="/Images/3d-briefcase.png" class="icon-img">', title: 'Work', sub: 'Our projects', url: '/pages/work.html', keys: ['work', 'projects', 'portfolio'] },
+    { icon: '<img src="/Images/contact-us.png" class="icon-img">', title: 'Contact', sub: 'Get a quote', url: '/pages/contact.html', keys: ['contact', 'quote', 'email', 'hire'] },
+    { icon: '<img src="/Images/day-and-night.png" class="icon-img">', title: 'Toggle Dark Mode', sub: 'Switch theme', action: 'darkmode', keys: ['dark', 'theme', 'mode'] },
+    { icon: '<img src="/Images/return.png" class="icon-img">', title: 'Back to Top', sub: 'Scroll to top', action: 'scrolltop', keys: ['top', 'scroll'] },
   ];
 
   function openCmd() {
@@ -129,6 +133,18 @@ document.addEventListener('DOMContentLoaded', () => {
     cmdOverlay.classList.remove('open');
     document.body.style.overflow = '';
   }
+
+
+  function updateLogo(isDark) {
+    const logo = document.querySelector('.nav-logo-icon');
+    if (!logo) return;
+
+    const darkSrc = logo.getAttribute('data-dark');
+    const lightSrc = logo.getAttribute('data-light');
+
+    logo.src = isDark ? darkSrc : lightSrc;
+  }
+
 
   function renderCommands(query) {
     if (!cmdResults) return;
@@ -159,7 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cmd.url) {
       navigateTo(cmd.url);
     } else if (cmd.action === 'darkmode') {
-      document.body.classList.toggle('dark-mode');
+        const root = document.documentElement;
+        const isDark = root.classList.toggle('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateLogo(isDark);
     } else if (cmd.action === 'scrolltop') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }

@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Work — StackRoll</title>
 <meta name="description" content="Projects by StackRoll. Web applications, backend systems, and custom solutions.">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+    updateLogo(isDark);
+  })();
+</script>
+
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/work.css">
 </head>
@@ -33,7 +44,10 @@
 </div>
 
 <nav class="nav">
-  <a href="../index.html" class="nav-logo">Stack<span>Roll</span></a>
+   <a href="/index.html" class="nav-logo">
+      <img src="/Images/sticon.png" data-light="/images/sticon.png" data-dark="/Images/sticonw.png" alt="Logo" class="nav-logo-icon">
+      <span class="nav-logo-text">Stack<span>Roll</span></span>
+    </a>
   <div class="nav-links">
     <a href="services.html" class="nav-link">Services</a>
     <a href="work.html" class="nav-link active">Work</a>

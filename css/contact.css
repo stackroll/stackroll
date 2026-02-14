@@ -21,6 +21,73 @@
   gap: 80px;
 }
 
+
+
+.nav-logo {
+  position: relative;
+  right: 215px;
+  width: 500px;   /* adjust to fit your text */
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.nav-logo-icon {
+  position: relative;
+  
+  top: 10px;
+  left: 95px;
+  width: 150px;
+  height: 150px;
+
+  transition:
+    transform 0.7s cubic-bezier(.22,1,.36,1),
+    opacity 0.45s ease,
+    filter 0.45s ease;
+}
+
+.nav-logo-text {
+  position: relative;
+  right: 10px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(6px) scale(0.9);
+  filter: blur(6px);
+
+  transition:
+    transform 0.7s cubic-bezier(.22,1,.36,1),
+    opacity 0.5s ease,
+    filter 0.5s ease;
+}
+
+.nav-logo-text span {
+  color: var(--accent);
+}
+
+
+.nav-logo:hover .nav-logo-icon {
+  transform: translateY(-4px) scale(0.75);
+  opacity: 0;
+  filter: blur(6px);
+}
+
+.nav-logo:hover .nav-logo-text {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+
+
 .contact-info {}
 .contact-block { margin-bottom: 48px; }
 .contact-label {
