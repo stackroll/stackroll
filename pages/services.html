@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — StackRoll</title>
 <meta name="description" content="Web applications, backend systems, APIs, and technical problem solving. See what StackRoll builds.">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+    updateLogo(isDark);
+  })();
+</script>
+
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/services.css">
 </head>
@@ -33,7 +44,10 @@
 </div>
 
 <nav class="nav">
-  <a href="../index.html" class="nav-logo">Stack<span>Roll</span></a>
+    <a href="/index.html" class="nav-logo">
+      <img src="/Images/sticon.png" data-light="/images/sticon.png" data-dark="/Images/sticonw.png" alt="Logo" class="nav-logo-icon">
+      <span class="nav-logo-text">Stack<span>Roll</span></span>
+    </a>
   <div class="nav-links">
     <a href="services.html" class="nav-link active">Services</a>
     <a href="work.html" class="nav-link">Work</a>
@@ -72,22 +86,22 @@
     <div class="sb-right">
       <div class="sb-features">
         <div class="sb-feature sr sr-d1">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"> <img src="/Images/color-selection.png" class="marquee-icon" alt=""></div>
           <h4>Custom Design</h4>
           <p>Unique layouts and interactions tailored to your brand identity.</p>
         </div>
         <div class="sb-feature sr sr-d2">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/responsive.png" class="marquee-icon" alt=""></div>
           <h4>Responsive</h4>
           <p>Pixel-perfect on every screen size, from mobile to ultrawide.</p>
         </div>
         <div class="sb-feature sr sr-d3">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/computer.png" class="marquee-icon" alt=""></div>
           <h4>Performance</h4>
           <p>Fast load times, optimized assets, 90+ Lighthouse scores.</p>
         </div>
         <div class="sb-feature sr sr-d4">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/web-design.png" class="marquee-icon" alt=""></div>
           <h4>SEO Ready</h4>
           <p>Semantic markup, meta optimization, structured data.</p>
         </div>
@@ -104,22 +118,22 @@
     <div class="sb-right">
       <div class="sb-features">
         <div class="sb-feature sr sr-d1">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/Rest.png" class="marquee-icon" alt=""></div>
           <h4>REST & GraphQL</h4>
           <p>Clean, documented APIs that developers actually enjoy using.</p>
         </div>
         <div class="sb-feature sr sr-d2">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/microservice.png" class="marquee-icon" alt=""></div>
           <h4>Microservices</h4>
           <p>Modular architecture that scales independently.</p>
         </div>
         <div class="sb-feature sr sr-d3">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/Database.png" class="marquee-icon" alt=""></div>
           <h4>Database Design</h4>
           <p>SQL, NoSQL, caching layers — the right tool for the job.</p>
         </div>
         <div class="sb-feature sr sr-d4">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/security.png" class="marquee-icon" alt=""></div>
           <h4>Security</h4>
           <p>Auth, encryption, input validation — security by default.</p>
         </div>
@@ -136,22 +150,22 @@
     <div class="sb-right">
       <div class="sb-features">
         <div class="sb-feature sr sr-d1">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/debugging.png" class="marquee-icon" alt=""></div>
           <h4>Debugging</h4>
           <p>Finding and fixing the bugs that keep you up at night.</p>
         </div>
         <div class="sb-feature sr sr-d2">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/Architecht.png" class="marquee-icon" alt=""></div>
           <h4>Architecture</h4>
           <p>System design that anticipates growth and change.</p>
         </div>
         <div class="sb-feature sr sr-d3">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/optimization.png" class="marquee-icon" alt=""></div>
           <h4>Optimization</h4>
           <p>Making slow things fast and expensive things cheap.</p>
         </div>
         <div class="sb-feature sr sr-d4">
-          <div class="sb-feature-icon"></div>
+          <div class="sb-feature-icon"><img src="/Images/devops.png" class="marquee-icon" alt=""></div>
           <h4>DevOps</h4>
           <p>CI/CD, containerization, infrastructure as code.</p>
         </div>
