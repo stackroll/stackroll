@@ -1,261 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StackRoll — Dev Studio</title>
-<meta name="description" content="StackRoll is a dev studio that designs, builds, and ships digital products. Websites, backends, APIs, and custom solutions.">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StackRoll</title>
+  <meta name="description" content="StackRoll is a dev studio that designs, builds, and ships digital products. Websites, backends, APIs, and custom solutions.">
+  <link rel="icon" type = "image/png" sizes="180x180" href="/Images/stbgiconw.png">
 
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.documentElement.classList.add('dark-mode');
-    }
-    updateLogo(isDark);
-  })();
-</script>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+      updateLogo(isDark);
+    })();
+  </script>
 
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
 
-<div class="loader">
-  <div class="loader-logo">Stack<span>Roll</span></div>
-  <div class="loader-bar-track"><div class="loader-bar"></div></div>
-  <div class="loader-text">Loading experience</div>
-  
-</div>
-
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
-
-<div class="page-transition"></div>
-
-<div class="cmd-overlay">
-  <div class="cmd-palette">
-    <div class="cmd-input-wrap">
-      <span class="cmd-icon">⌘</span>
-      <input class="cmd-input" placeholder="Type a command or search..." autocomplete="off" spellcheck="false">
-      <span class="cmd-esc">ESC</span>
-    </div>
-    <div class="cmd-results"></div>
-    <div class="cmd-footer">
-      <span>↑↓ Navigate</span>
-      <span>↵ Select</span>
-      <span>ESC Close</span>
-    </div>
-  </div>
-</div>
-
-
-<nav class="nav">
-  <a href="/index.html" class="nav-logo">
-      <img src="/Images/sticon.png" data-light="/images/sticon.png" data-dark="/Images/sticonw.png" alt="Logo" class="nav-logo-icon">
-      <span class="nav-logo-text">Stack<span>Roll</span></span>
-  </a>
-  <div class="nav-links">
-    <a href="/pages/services.html" class="nav-link">Services</a>
-    <a href="/pages/work.html" class="nav-link">Work</a>
-    <a href="/pages/contact.html" class="nav-link">Contact</a>
-    <button class="nav-shortcut" title="Command Palette"><kbd>⌘</kbd><kbd>K</kbd></button>
-    <a href="/pages/contact.html" class="nav-cta-btn">Get a Quote</a>
-  </div>
-  <button class="nav-toggle" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<div class="mobile-menu">
-  <a href="/index.html">Home</a>
-  <a href="/pages/services.html">Services</a>
-  <a href="/pages/work.html">Work</a>
-  <a href="/pages/contact.html">Contact</a>
-</div>
-
-<section class="hero">
-  <div class="hero-bg">
-    <div class="hero-bg-shape"></div>
-    <div class="hero-bg-shape"></div>
-    <div class="hero-bg-shape"></div>
-    <div class="hero-grid"></div>
-  </div>
-  <div class="hero-content">
-    <div class="hero-tag tag">Dev Studio</div>
-    <h1 class="hero-heading heading-xl">
-      We build<br>
-      <span class="rotating-text" data-words="websites,backends,APIs,solutions,experiences">websites</span><br>
-      that matter.
-    </h1>
-    <p class="hero-desc text-body">Software engineers. One studio. We design, build, and ship digital products from the ground up. No templates. No shortcuts.</p>
-    <div class="hero-actions">
-      <a href="/pages/contact.html" class="btn btn-dark">Start a Project <span class="btn-arrow">→</span></a>
-      <a href="/pages/services.html" class="btn btn-outline">What We Do</a>
-    </div>
-  </div>
-  <div class="hero-meta">
-    <div class="hero-scroll">
-      <div class="hero-scroll-line"></div>
-      Scroll
-    </div>
-    <div class="hero-status">
-      <span class="hero-status-dot"></span>
-      Available for projects
-    </div>
-  </div>
-</section>
-
-<div class="marquee">
-  <div class="marquee-track">
-    <div class="marquee-item"><span class="marquee-item-text">Web Applications</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Backend Systems</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">API Architecture</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Problem Solving</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">System Design</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Full-Stack Dev</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Performance</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Custom Solutions</span><span class="marquee-dot"></span></div>
+  <div class="loader">
+    <div class="loader-logo">Stack<span>Roll</span></div>
+    <div class="loader-bar-track"><div class="loader-bar"></div></div>
+    <div class="loader-text">Loading experience</div>
     
-    <div class="marquee-item"><span class="marquee-item-text">Web Applications</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Backend Systems</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">API Architecture</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Problem Solving</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">System Design</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Full-Stack Dev</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Performance</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-item-text">Custom Solutions</span><span class="marquee-dot"></span></div>
   </div>
-</div>
 
-<section class="section services-preview">
-  <div class="services-preview-header">
-    <div>
-      <div class="tag sr">What We Do</div>
-      <h2 class="heading-lg sr sr-d1">Software that<br>solves real problems.</h2>
-    </div>
-    <a href="/pages/services.html" class="btn btn-outline sr sr-d2">All Services <span class="btn-arrow">→</span></a>
-  </div>
-  <div class="services-grid">
-    <div class="service-card sr sr-d1">
-      <div class="service-num">01</div>
-      <h3>Websites & Web Apps</h3>
-      <p>Responsive, fast, designed to convert. From landing pages to full platforms — engineered from scratch.</p>
-      <div class="service-tags">
-        <span class="service-tag">HTML / CSS / JS</span>
-        <span class="service-tag">React</span>
-        <span class="service-tag">Responsive</span>
-      </div>
-    </div>
-    <div class="service-card sr sr-d2">
-      <div class="service-num">02</div>
-      <h3>Backend & APIs</h3>
-      <p>Robust server-side systems that scale. RESTful APIs, microservices, database architecture, and the infrastructure layer.</p>
-      <div class="service-tags">
-        <span class="service-tag">Java / Spring</span>
-        <span class="service-tag">Go</span>
-        <span class="service-tag">Python</span>
-        <span class="service-tag">C++</span>
-      </div>
-    </div>
-    <div class="service-card sr sr-d3">
-      <div class="service-num">03</div>
-      <h3>Problem Solving</h3>
-      <p>Technical challenges nobody can crack? Performance issues, system design, complex integrations — we live for those.</p>
-      <div class="service-tags">
-        <span class="service-tag">Architecture</span>
-        <span class="service-tag">Debugging</span>
-        <span class="service-tag">DevOps</span>
-      </div>
-    </div>
-  </div>
-</section>
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
 
-<section class="section work-preview">
-  <div class="work-preview-header">
-    <div>
-      <div class="tag sr">Selected Work</div>
-      <h2 class="heading-lg sr sr-d1">Projects ship soon.</h2>
-      <p class="text-body sr sr-d2" style="max-width: 460px;">We're just getting started. Our first builds are in the pipeline — be one of our first clients.</p>
+  <div class="page-transition"></div>
+
+  <div class="cmd-overlay">
+    <div class="cmd-palette">
+      <div class="cmd-input-wrap">
+        <span class="cmd-icon">⌘</span>
+        <input class="cmd-input" placeholder="Type a command or search..." autocomplete="off" spellcheck="false">
+        <span class="cmd-esc">ESC</span>
+      </div>
+      <div class="cmd-results"></div>
+      <div class="cmd-footer">
+        <span>↑↓ Navigate</span>
+        <span>↵ Select</span>
+        <span>ESC Close</span>
+      </div>
     </div>
-    <a href="/pages/work.html" class="btn btn-outline sr sr-d3">View All <span class="btn-arrow">→</span></a>
   </div>
-  <div class="work-grid">
-    <div class="work-card sr">
-      <div class="work-thumb work-thumb-1">
-        <div class="work-placeholder">
-          <div class="work-placeholder-glyph">&lt;/&gt;</div>
-          <div class="work-placeholder-label">In Development</div>
+
+
+  <nav class="nav">
+    <a href="/index.html" class="nav-logo">
+        <img src="/Images/sticon.png" data-light="/images/sticon.png" data-dark="/Images/sticonw.png" alt="Logo" class="nav-logo-icon">
+        <span class="nav-logo-text">Stack<span>Roll</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/Services/" class="nav-link">Services</a>
+      <a href="/Work/" class="nav-link">Work</a>
+      <a href="/Contact/" class="nav-link">Contact</a>
+      <button class="nav-shortcut" title="Command Palette"><kbd>⌘</kbd><kbd>K</kbd></button>
+      <a href="/Contact/" class="nav-cta-btn">Get a Quote</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="/index.html">Home</a>
+    <a href="/Services/">Services</a>
+    <a href="/Work/">Work</a>
+    <a href="/Contact/">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-bg-shape"></div>
+      <div class="hero-bg-shape"></div>
+      <div class="hero-bg-shape"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag tag">Dev Studio</div>
+      <h1 class="hero-heading heading-xl">
+        We build<br>
+        <span class="rotating-text" data-words="websites,backends,APIs,solutions,experiences">websites</span><br>
+        that matter.
+      </h1>
+      <p class="hero-desc text-body">Software engineers. One studio. We design, build, and ship digital products from the ground up. No templates. No shortcuts.</p>
+      <div class="hero-actions">
+        <a href="/Contact/" class="btn btn-dark">Start a Project <span class="btn-arrow">→</span></a>
+        <a href="/Services/" class="btn btn-outline">What We Do</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-scroll">
+        <div class="hero-scroll-line"></div>
+        Scroll
+      </div>
+      <div class="hero-status">
+        <span class="hero-status-dot"></span>
+        Available for projects
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-item-text">Web Applications</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Backend Systems</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">API Architecture</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Problem Solving</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">System Design</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Full-Stack Dev</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Performance</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Custom Solutions</span><span class="marquee-dot"></span></div>
+      
+      <div class="marquee-item"><span class="marquee-item-text">Web Applications</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Backend Systems</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">API Architecture</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Problem Solving</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">System Design</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Full-Stack Dev</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Performance</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span class="marquee-item-text">Custom Solutions</span><span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <section class="section services-preview">
+    <div class="services-preview-header">
+      <div>
+        <div class="tag sr">What We Do</div>
+        <h2 class="heading-lg sr sr-d1">Software that<br>solves real problems.</h2>
+      </div>
+      <a href="/Services/" class="btn btn-outline sr sr-d2">All Services <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="services-grid">
+      <div class="service-card sr sr-d1">
+        <div class="service-num">01</div>
+        <h3>Websites & Web Apps</h3>
+        <p>Responsive, fast, designed to convert. From landing pages to full platforms — engineered from scratch.</p>
+        <div class="service-tags">
+          <span class="service-tag">HTML / CSS / JS</span>
+          <span class="service-tag">React</span>
+          <span class="service-tag">Responsive</span>
         </div>
       </div>
-      <div class="work-info">
-        <h3>Project 001</h3>
-        <p>Full-stack web application — details dropping soon.</p>
-        <div class="work-status"><span class="pulse-dot"></span> Coming Soon</div>
-      </div>
-    </div>
-    <div class="work-card sr sr-d2">
-      <div class="work-thumb work-thumb-2">
-        <div class="work-placeholder">
-          <div class="work-placeholder-glyph">{&nbsp;}</div>
-          <div class="work-placeholder-label">In Development</div>
+      <div class="service-card sr sr-d2">
+        <div class="service-num">02</div>
+        <h3>Backend & APIs</h3>
+        <p>Robust server-side systems that scale. RESTful APIs, microservices, database architecture, and the infrastructure layer.</p>
+        <div class="service-tags">
+          <span class="service-tag">Java / Spring</span>
+          <span class="service-tag">Go</span>
+          <span class="service-tag">Python</span>
+          <span class="service-tag">C++</span>
         </div>
       </div>
-      <div class="work-info">
-        <h3>Project 002</h3>
-        <p>Backend system & API — something big cooking.</p>
-        <div class="work-status"><span class="pulse-dot"></span> Coming Soon</div>
+      <div class="service-card sr sr-d3">
+        <div class="service-num">03</div>
+        <h3>Problem Solving</h3>
+        <p>Technical challenges nobody can crack? Performance issues, system design, complex integrations — we live for those.</p>
+        <div class="service-tags">
+          <span class="service-tag">Architecture</span>
+          <span class="service-tag">Debugging</span>
+          <span class="service-tag">DevOps</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-band">
-  <div class="tag sr">Let's Work Together</div>
-  <h2 class="heading-lg sr sr-d1">Got an idea?<br>Let's make it real.</h2>
-  <p class="text-body sr sr-d2">Tell us about your project and we'll get back within 24 hours with a game plan.</p>
-  <a href="/pages/contact.html" class="btn btn-dark sr sr-d3">Get a Quote <span class="btn-arrow">→</span></a>
-</section>
+  <section class="section work-preview">
+    <div class="work-preview-header">
+      <div>
+        <div class="tag sr">Selected Work</div>
+        <h2 class="heading-lg sr sr-d1">Projects ship soon.</h2>
+        <p class="text-body sr sr-d2" style="max-width: 460px;">We're just getting started. Our first builds are in the pipeline — be one of our first clients.</p>
+      </div>
+      <a href="/Work/" class="btn btn-outline sr sr-d3">View All <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="work-grid">
+      <div class="work-card sr">
+        <div class="work-thumb work-thumb-1">
+          <div class="work-placeholder">
+            <div class="work-placeholder-glyph">&lt;/&gt;</div>
+            <div class="work-placeholder-label">In Development</div>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Project 001</h3>
+          <p>Full-stack web application — details dropping soon.</p>
+          <div class="work-status"><span class="pulse-dot"></span> Coming Soon</div>
+        </div>
+      </div>
+      <div class="work-card sr sr-d2">
+        <div class="work-thumb work-thumb-2">
+          <div class="work-placeholder">
+            <div class="work-placeholder-glyph">{&nbsp;}</div>
+            <div class="work-placeholder-label">In Development</div>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Project 002</h3>
+          <p>Backend system & API — something big cooking.</p>
+          <div class="work-status"><span class="pulse-dot"></span> Coming Soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="divider"></div>
+  <section class="cta-band">
+    <div class="tag sr">Let's Work Together</div>
+    <h2 class="heading-lg sr sr-d1">Got an idea?<br>Let's make it real.</h2>
+    <p class="text-body sr sr-d2">Tell us about your project and we'll get back within 24 hours with a game plan.</p>
+    <a href="/Contact/" class="btn btn-dark sr sr-d3">Get a Quote <span class="btn-arrow">→</span></a>
+  </section>
 
-<footer class="footer">
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand">Stack<span>Roll</span></div>
-      <p class="footer-desc">A dev studio that builds digital products from the ground up. Based in Italy.</p>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Pages</div>
-      <a href="/index.html">Home</a>
-      <a href="/pages/services.html">Services</a>
-      <a href="/pages/work.html">Work</a>
-      <a href="/pages/contact.html">Contact</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Services</div>
-      <a href="/pages/services.html">Web Apps</a>
-      <a href="/pages/services.html">Backend & APIs</a>
-      <a href="/pages/services.html">Problem Solving</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Connect</div>
-      <a href="mailto:stackroll26@gmail.com">stackroll26@gmail.com</a>
-      <a href="https://github.com/stackroll" target="_blank" rel="noopener">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-copy">© 2026 StackRoll. All rights reserved.</span>
-    <div class="footer-socials">
-      <a href="https://github.com/stackroll" target="_blank" rel="noopener">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-    </div>
-  </div>
-</footer>
+  <div class="divider"></div>
 
-<script src="js/main.js"></script>
-</body>
-</html>
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Stack<span>Roll</span></div>
+        <p class="footer-desc">A dev studio that builds digital products from the ground up. Based in Italy.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Pages</div>
+        <a href="/index.html">Home</a>
+        <a href="/Services/">Services</a>
+        <a href="/Work/">Work</a>
+        <a href="/Contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="/Services/">Web Apps</a>
+        <a href="/Services/">Backend & APIs</a>
+        <a href="/Services/">Problem Solving</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Connect</div>
+        <a href="mailto:stackroll26@gmail.com">stackroll26@gmail.com</a>
+        <a href="https://github.com/stackroll" target="_blank" rel="noopener">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 StackRoll. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="https://github.com/stackroll" target="_blank" rel="noopener">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  </body>
+  </html>
