@@ -227,9 +227,52 @@
   padding: 120px var(--page-padding) 140px;
 }
 
+
+
+@media (max-width: 1024px) {
+ 
+  .nav-logo {
+      right: 215px;
+      width: 500px;
+      justify-content: center;
+    }
+
+    .nav-logo-icon {
+      top: 10px;
+      left: 95px;
+      width: 150px;
+      height: 150px;
+    }
+}
+
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: auto; }
   .page-hero-number { display: none; }
   .cta-card { padding: 40px 32px; }
+
+  .nav-logo {
+    right: 0;    
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .nav-logo-icon {
+    left: 0;
+    top: 0;
+    width: 100px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; }
+   .nav-logo {
+    padding-left: 18px; 
+  }
+
+  .nav-logo-icon {
+    width: 90px;
+  }
 }
