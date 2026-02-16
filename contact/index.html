@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact — StackRoll</title>
+        <title>Contact | StackRoll</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="180x180"
+            href="/images/stbgiconw.png"
+        />
         <meta
             name="description"
             content="Get in touch with StackRoll. Tell us about your project and get a free consultation."
@@ -11,9 +17,9 @@
 
         <script>
             (function () {
-                const savedTheme = localStorage.getItem('theme');
-                if (savedTheme === 'dark') {
-                document.documentElement.classList.add('dark-mode');
+                const savedTheme = localStorage.getItem("theme");
+                if (savedTheme === "dark") {
+                    document.documentElement.classList.add("dark-mode");
                 }
                 updateLogo(isDark);
             })();
@@ -53,26 +59,32 @@
         </div>
 
         <nav class="nav">
-            <a href="/index.html" class="nav-logo">
-                <img src="/Images/sticon.png" data-light="/images/sticon.png" data-dark="/Images/sticonw.png" alt="Logo" class="nav-logo-icon">
+            <a href="/" class="nav-logo">
+                <img
+                    src="/images/sticon.png"
+                    data-light="/images/sticon.png"
+                    data-dark="/images/sticonw.png"
+                    alt="Logo"
+                    class="nav-logo-icon"
+                />
                 <span class="nav-logo-text">Stack<span>Roll</span></span>
             </a>
             <div class="nav-links">
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="work.html" class="nav-link">Work</a>
-                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="/services/" class="nav-link">Services</a>
+                <a href="/work/" class="nav-link">Work</a>
+                <a href="/contact/" class="nav-link active">Contact</a>
                 <button class="nav-shortcut"><kbd>⌘</kbd><kbd>K</kbd></button>
-                <a href="contact.html" class="nav-cta-btn">Get a Quote</a>
+                <a href="/contact/" class="nav-cta-btn">Get a Quote</a>
             </div>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
         </nav>
         <div class="mobile-menu">
-            <a href="../index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="work.html">Work</a>
-            <a href="contact.html">Contact</a>
+            <a href="../">Home</a>
+            <a href="/">services</a>
+            <a href="/work/">Work</a>
+            <a href="/contact/">Contact</a>
         </div>
 
         <section class="page-hero">
@@ -314,16 +326,16 @@
                 </div>
                 <div class="footer-col">
                     <div class="footer-col-title">Pages</div>
-                    <a href="/index.html">Home</a>
-                    <a href="/pages/services.html">Services</a>
-                    <a href="/pages/work.html">Work</a>
-                    <a href="/pages/contact.html">Contact</a>
+                    <a href="/">Home</a>
+                    <a href="/services/">services</a>
+                    <a href="/work/">Work</a>
+                    <a href="/contact/">Contact</a>
                 </div>
                 <div class="footer-col">
                     <div class="footer-col-title">Services</div>
-                    <a href="/pages/services.html">Web Apps</a>
-                    <a href="/pages/services.html">Backend & APIs</a>
-                    <a href="/pages/services.html">Problem Solving</a>
+                    <a href="/services/">Web Apps</a>
+                    <a href="/services/">Backend & APIs</a>
+                    <a href="/services/">Problem Solving</a>
                 </div>
                 <div class="footer-col">
                     <div class="footer-col-title">Connect</div>
