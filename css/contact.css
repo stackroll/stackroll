@@ -271,10 +271,48 @@
 
 @media (max-width: 1024px) {
   .contact-section { grid-template-columns: 1fr; gap: 48px; }
+
+  .nav-logo {
+      right: 215px;
+      width: 500px;
+      justify-content: center;
+    }
+
+    .nav-logo-icon {
+      top: 10px;
+      left: 95px;
+      width: 150px;
+      height: 150px;
+    }
 }
+
 @media (max-width: 768px) {
   .page-hero-number { display: none; }
   .contact-form-wrap { padding: 32px 24px; }
   .form-row { grid-template-columns: 1fr; }
   .faq-grid { grid-template-columns: 1fr; }
+
+  .nav-logo {
+    right: 0;    
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .nav-logo-icon {
+    left: 0;
+    top: 0;
+    width: 100px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; }
+   .nav-logo {
+    padding-left: 18px; 
+  }
+
+  .nav-logo-icon {
+    width: 90px;
+  }
 }
