@@ -209,35 +209,20 @@ img { max-width: 100%; display: block; }
 
 
 .nav-logo-icon {
-  position: relative;
-  width: 110px;
-  height: auto;
-  top: 0;
-  left: 0;
-
-  transition:
-    transform 0.7s cubic-bezier(.22,1,.36,1),
-    opacity 0.45s ease,
-    filter 0.45s ease;
+  display: none;
 }
 
 .nav-logo-text {
-  position: relative;
-  right: 10px;
+  position: static;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 26px;
+  font-size: 22px;
   letter-spacing: -0.5px;
   white-space: nowrap;
-
-  opacity: 0;
-  transform: translateY(6px) scale(0.9);
-  filter: blur(6px);
-
-  transition:
-    transform 0.7s cubic-bezier(.22,1,.36,1),
-    opacity 0.5s ease,
-    filter 0.5s ease;
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: none;
 }
 
 .nav-logo-text span {
@@ -245,16 +230,48 @@ img { max-width: 100%; display: block; }
 }
 
 
-.nav-logo:hover .nav-logo-icon {
-  transform: translateY(-4px) scale(0.75);
-  opacity: 0;
-  filter: blur(6px);
-}
+@media (min-width: 1024px) {
+  .nav-logo {
+    overflow: hidden;
+  }
 
-.nav-logo:hover .nav-logo-text {
-  transform: translateY(0) scale(1);
-  opacity: 1;
-  filter: blur(0);
+  .nav-logo-icon {
+    display: block;
+    position: relative;
+    width: 110px;
+    height: auto;
+    top: 0;
+    left: 0;
+    transition:
+      transform 0.7s cubic-bezier(.22,1,.36,1),
+      opacity 0.45s ease,
+      filter 0.45s ease;
+  }
+
+  .nav-logo-text {
+    position: relative;
+    right: 10px;
+    font-size: 26px;
+    opacity: 0;
+    transform: translateY(6px) scale(0.9);
+    filter: blur(6px);
+    transition:
+      transform 0.7s cubic-bezier(.22,1,.36,1),
+      opacity 0.5s ease,
+      filter 0.5s ease;
+  }
+
+  .nav-logo:hover .nav-logo-icon {
+    transform: translateY(-4px) scale(0.75);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  .nav-logo:hover .nav-logo-text {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 
@@ -710,17 +727,8 @@ img { max-width: 100%; display: block; }
   .nav-toggle { display: flex; }
 
   .nav-logo {
-    right: 0;    
-    width: auto;
-    padding-left: 10px;
+    right: 0;
   }
-
-  .nav-logo-icon {
-    left: 0;
-    top: 0;
-    width: 100px;
-  }
-
 
   .section { padding: 100px var(--page-padding); }
 
@@ -732,13 +740,4 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   .footer-top { grid-template-columns: 1fr; }
-   .nav-logo {
-    padding-left: 18px; 
-  }
-
-  .nav-logo-icon {
-    width: 90px;
-  }
-
-
 }
